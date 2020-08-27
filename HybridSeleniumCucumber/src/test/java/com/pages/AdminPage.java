@@ -35,6 +35,8 @@ public class AdminPage extends Library{
 	public AdminPage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
+		
+		
 	}
 	//clicking admin functionality
 	public void adminClick() {
