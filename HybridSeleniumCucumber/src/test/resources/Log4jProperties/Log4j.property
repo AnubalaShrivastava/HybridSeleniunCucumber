@@ -1,4 +1,10 @@
+// Here we have defined root logger
 log4j.rootLogger=INFO,CONSOLE,R,HTML,TTCC
+
+log4j.debug=true
+log4j.defaultInitOverride=true
+log4j.configurationClass=src/main/java/com/baseClass/Library.class
+log4j.ignoreTCL=true
  
 // Here we define the appender
 log4j.appender.CONSOLE=org.apache.log4j.ConsoleAppender
@@ -7,7 +13,7 @@ log4j.appender.TTCC=org.apache.log4j.RollingFileAppender
 log4j.appender.HTML=org.apache.log4j.FileAppender
  
 // Here we define log file location
-log4j.appender.R.File=.//src//test//resources//Log4jProperties//LogFile.log
+log4j.appender.R.File=./src//test//resources//Log4jProperties//LogFile.log
 log4j.appender.TTCC.File=.//src//test//resources//Log4jProperties//LogFileBackup.log
 log4j.appender.HTML.File=.//src//test//resources//Log4jProperties//application.html
  

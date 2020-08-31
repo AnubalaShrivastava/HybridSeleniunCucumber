@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Logger;
 
+import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
@@ -36,7 +36,11 @@ public class Library {
 			e.printStackTrace();
 		}
 
-		logger = Logger.getLogger(Library.class.getName());
+		//logger = Logger.getLogger(Library.class.getName());
+		logger = Logger.getLogger(Library.class);
+		
+		
+		
 		PropertyConfigurator.configure("./src/test/resources/Log4jProperties/Log4j.property");
 
 	}
