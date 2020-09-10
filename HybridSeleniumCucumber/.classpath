@@ -35,5 +35,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Selenium/mysql-connector-java-8.0.21.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/protobuf-java-3.11.4.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

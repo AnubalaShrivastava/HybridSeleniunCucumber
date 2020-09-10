@@ -12,3 +12,9 @@ searchUsername=kevin
 searchRole=All
 searchEmpNamesearch=Kevin Mathews
 Status=Enabled
+
+#DataBase connection
+dburl=jdbc:mysql://localhost:3306/sample?useSSL=false
+dbusername=root
+dbpasswort=
+dbquery= select username, password from OrangeHRM where username ='Admin';

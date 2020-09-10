@@ -1,0 +1,1 @@
+{"uuid":"1470d86c-b441-44d7-8edc-ee7b8e70f631","name":"Default test","children":["18825e06-f9e7-4096-9521-d2dc25bf6ae7"],"befores":[{"name":"stratUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1599760490000,"stop":1599760507898}],"afters":[],"links":[],"start":1599760489912,"stop":1599760510182}

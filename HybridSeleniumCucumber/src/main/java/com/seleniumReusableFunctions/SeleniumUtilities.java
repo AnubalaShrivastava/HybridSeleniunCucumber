@@ -20,6 +20,7 @@ public class SeleniumUtilities extends Library {
 		this.driver=driver;
 		
 	}
+	//Take Screen shot
 	public void to_take_screenshot(String path) {
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File source=ts.getScreenshotAs(OutputType.FILE);
@@ -29,6 +30,22 @@ public class SeleniumUtilities extends Library {
 			e.printStackTrace();
 		}
 	}
+	
+	// Static method for screenshot
+	public static void captureScreenShot(WebDriver driver2,String screenShotName) {
+		try {
+			TakesScreenshot ts=(TakesScreenshot)driver2;
+			File source=ts.getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(source,new File("src/test/resources/ScreenShots/"+screenShotName+".png"));
+			System.out.println("ScreenShot Taken");
+			
+		}catch(Exception e) {
+			System.out.println("Exception during taking screenshot ");
+			
+		}
+		
+	}
+	//Getting Title
 	public void getTitle() {
 		
 		System.out.println(driver.getTitle());
@@ -44,6 +61,8 @@ public class SeleniumUtilities extends Library {
 		select.selectByVisibleText(selectedvalue);
 		
 	}
+	
+	
 	public void quit() {
 		driver.close();
 		

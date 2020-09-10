@@ -27,6 +27,7 @@ public class Library {
 		properties = new Properties();
 		try {
 			InputStream inputStream = new FileInputStream("./src/test/resources/ConfigurationProperties/Config.property");
+			
 			try {
 				properties.load(inputStream);
 			} catch (IOException e) {
